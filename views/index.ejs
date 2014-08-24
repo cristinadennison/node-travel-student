@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet.css" type ="text/css" />
+  </head>
+
+  <body>
+    <h1> My African Adventures!</h1>
+    
+    <% 
+      for (var i = 0; i < locations.length; i++) {
+      var location = locations [i]; 
+    %>
+    
+    <div>
+      <h2><%=location.name%> - <%=location.country%> </h2>
+      <img src="/images/<%=location.image_name%>"/>
+      <p><%=location.description%></p>
+      <p>Rating: <%=location.rating%> (out of 5)</p>
+    </div>
+  
+  <%
+  }
+  %> 
+    
+  </body>
+</html>
